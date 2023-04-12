@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.css" integrity="sha512-DIW4FkYTOxjCqRt7oS9BFO+nVOwDL4bzukDyDtMO7crjUZhwpyrWBFroq+IqRe6VnJkTpRAS6nhDvf0w+wHmxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shopping basket</title>
+  </head>
+  <body onload="myFunction()">
+    <div class="main-navigation-bar"></div>
+    <div class="shopping-basket text-white pt-28 pb-24 pl-20">
+      <h1 class="shopping-head text-6xl font-thin">
+        ANGUILAR WINERIES <br />
+        <span class="font-black">SHOPPING BASKET</span>
+      </h1>
+      <p class="shopping-para text-base text-white">
+        JUICES, DRINKS OR LIQUORS? suddenly something for CHRISTMAS DINNER? Any
+        CHRISTMAS BASKET <br />
+        as a gift? Don't forget to buy everything you need and don't forget to
+        enter your discount coupons!
+      </p>
+    </div>
+    <div class="carted">
+        <div class="maincart">
+          <div class="cart-items-heading pt-28">
+            <h3>PRODUCTS</h3>
+            <h3>PRICE</h3>
+            <h3>AMOUNT</h3>
+            <h3>TOTAL</h3>
+          </div>
+          <div class="bd-pd">
+            <div class="border-bottom-two pt-6"></div>
+          </div>
+          <div class="cart-items">
+            <!-- <img src="" alt="" />
+            <p class="name"></p>
+            <p class="price"></p>
+            <p class="amount"></p>
+            <p class="total-price"></p>
+            <div class="delete-button"></div> -->
+          </div>
+        </div>
+        <div class="bd-pd">
+          <div class="border-bottom-two pt-6"></div>
+        </div>
+        <div class="total-main">
+          <div class="coupon">
+            <input
+              class="coupon-input text-base"
+              type="text"
+              placeholder="Coupon code"
+            />
+            <a href=""
+              ><div class="coupon-btn text-base font-semibold">Coupon</div></a
+            >
+          </div>
+          <div class="total-basket">
+            <div class="t-1">
+              <h1 class="totalbasket text-4xl colored">
+                <span class="font-black">TOTAL</span>BASKET
+              </h1>
+            </div>
+            <div class="t-2">
+              <p class="sub-total text-lg colored flex-total">
+                <span class="font-semibold">Sub-total:</span>
+                <span class="sub-num">0</span>
+              </p>
+            </div>
+            <div class="t-3">
+              <p class="VAT text-lg colored flex-total">
+                <span class="font-semibold">VAT:</span>
+                <span class="vat-num">5.27</span>
+              </p>
+            </div>
+            <div class="t-4">
+              <p class="delivery text-lg colored flex-total">
+                <span class="font-semibold">Delivery:</span>
+                <span class="delivery-num">1.5</span>
+              </p>
+            </div>
+            <div class="t-5">
+              <div class="bb-wd"><div class="border-bottom-two"></div></div>
+              <p class="Total text-lg colored flex-total">
+                <span class="font-semibold">Total:</span>
+                <span class="total-num">0</span>
+              </p>
+              <div class="bb-wd"><div class="border-bottom-two"></div></div>
+            </div>
+            <a href=""
+              ><div class="buy coupon-btn text-base font-semibold">BUY</div></a
+            >
+          </div>
+        </div>
+        <div class="banners-four">
+          <img src="./img/banner_bg_3 (3).jpg" alt="" />
+          <img src="./img/banner_bg_3.jpg" alt="" />
+          <img class="abs" src="./img/site_logo.png" alt="" />
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-gray-800" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8 justify-center">
+          <div class="pb-8 xl:grid xl:grid-cols-5 xl:gap-8 ">
+            <div class="grid grid-cols-2 gap-8 xl:col-span-4 ">
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3 class="text-base font-medium text-white">INFORMATION</h3>
+                  <ul role="list" class="mt-4 space-y-4">
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">Us</a>
+                    </li>
+    
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">Delivery</a>
+                    </li>
+    
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">Legal warning</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">Privacy Policy</a>
+                    </li>
+    
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">Secure payment</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">Southlander</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-12 md:mt-0">
+                  <h3 class="text-base font-medium text-white">PRODUCTS</h3>
+                  <ul role="list" class="mt-4 space-y-4">
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">Complete Catalog</a>
+                    </li>
+    
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">Fruits and vegetables</a>
+                    </li>
+    
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">Meats, Fish <br>
+                        and Vegan Foods</a>
+                    </li>
+    
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">Juices, Beverages and Liquors</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">Snacks and Preserves</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3 class="text-base font-medium text-white">MY SHOPPING</h3>
+                  <ul role="list" class="mt-4 space-y-4">
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">Sign-In/Up</a>
+                    </li>
+    
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">my basket</a>
+                    </li>
+    
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">Buy</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-12 md:mt-0">
+                  <h3 class="text-base font-medium text-white">CONTACTS</h3>
+                  <ul role="list" class="mt-4 space-y-4">
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">DELIVERY | Quito, Ecuador</a>
+                    </li>
+    
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white">CALL CENTER | <span
+                          class="color-change">+593 2 392 2311</span> <br>
+                        WHATSAPP | <span class="color-change">+593 99 203 0363</span></a>
+                    </li>
+    
+                    <li>
+                      <a href="#" class="text-base text-gray-300 hover:text-white"><span
+                          class="color-change">info@bodegasaguilar.com</span></a>
+                    </li>
+                    <li class="face-insta">
+                      <a href="#" class="text-base text-gray-300 hover:text-white "><a href=""><i
+                            class="text-gray-300 fa-brands fa-facebook-f"></i> </i></a>
+                        <a href=""><i class="fa-brands fa-instagram text-gray-300"></i></a></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-gray-700 pt-8 lg:flex lg:items-center lg:justify-between xl:mt-0">
+            <div>
+    
+              <p class="mt-2 text-base text-gray-300">© 2020, powered by <span class="invest">_AR_Investments</span> |
+                Privacy Policy | sitemap</p>
+            </div>
+            <form class="mt-4 sm:flex sm:max-w-md lg:mt-0">
+              <label for="email-address" class="sr-only">Email address</label>
+              <input type="email" name="email-address" id="email-address" autocomplete="email" required class="submit-input"
+                placeholder="Write your email">
+              <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                <button type="submit" class="submit">I WANT TO OPEN MY PREMISES OF <br> 'BODEGAS AGUILAR'</button>
+              </div>
+            </form>
+          </div>
+    
+        </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/cart.js"></script>
+  </body>
+</html>
